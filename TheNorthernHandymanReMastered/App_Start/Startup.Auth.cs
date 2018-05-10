@@ -58,11 +58,11 @@ namespace TheNorthernHandymanReMastered
             //   appId: "",
             //   appSecret: "");
 
-            //app.UseGoogleAuthentication(new GoogleOAuth2AuthenticationOptions()
-            //{
-            //    ClientId = "",
-            //    ClientSecret = ""
-            //});
+            app.UseGoogleAuthentication(new GoogleOAuth2AuthenticationOptions()
+            {
+                ClientId = "98153047827-eg8p911sf99qgtijopmf5njnguhm9fol.apps.googleusercontent.com",
+                ClientSecret = "hC6V42rbZOMDsIK9bacOxk2w"
+            });
         }
     }
 }

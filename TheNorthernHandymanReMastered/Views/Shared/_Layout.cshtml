@@ -21,7 +21,7 @@
     <meta name="twitter:title" content="">
     <meta name="twitter:description" content="">
     <meta name="twitter:image" content="">
-
+    
     <!-- Fav and touch icons -->
     <link rel="shortcut icon" href="img/icons/favicon.png">
     <link rel="apple-touch-icon-precomposed" sizes="114x114" href="img/icons/114x114.png">
@@ -57,7 +57,7 @@
 <body class="page-index has-hero">
     <!--Change the background class to alter background image, options are: benches, boots, buildings, city, metro -->
     <div id="background-wrapper" class="buildings" data-stellar-background-ratio="0.1">
-
+        
         <!-- ======== Region: #navigation ======== -->
         <div id="navigation" class="wrapper">
             <!--Hidden Header Region-->
@@ -138,8 +138,8 @@
                                 <li class="user-button"><a class="btn btn-primary btn-hh-trigger" role="button" data-toggle="collapse" data-target=".header-hidden">Open</a></li>
                             </ul>
                             <ul class="list-inline user-menu pull-right">
-                                <li class="user-register"><i class="fa fa-edit text-primary "></i> <a href="register.html" class="text-uppercase">Register</a></li>
-                                <li class="user-login"><i class="fa fa-sign-in text-primary"></i> <a href="login.html" class="text-uppercase">Login</a></li>
+                                <li class="user-register"><i class="fa fa-edit text-primary "></i> <a href='@Url.Action("Register","Account",null)'class="text-uppercase">Register</a></li>
+                                <li class="user-login"><i class="fa fa-sign-in text-primary"></i> <a href='@Url.Action("Login","Account",null)' class="text-uppercase">Login + @User.Identity.Name</a></li>
                             </ul>
                         </div>
                     </div>
@@ -816,6 +816,10 @@
         </div>
     </footer>
 
+    @RenderSection("Scripts", false)
+    {    <!-- Required JavaScript Libraries -->
+
+    }
     <!-- Required JavaScript Libraries -->
     <script src="~/lib/jquery/jquery.min.js"></script>
     <script src="~/lib/bootstrap/js/bootstrap.min.js"></script>
