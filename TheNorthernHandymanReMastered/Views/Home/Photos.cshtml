@@ -1,0 +1,96 @@
+﻿
+@{
+    ViewBag.Title = "Albums | TheNorthernHandyman";
+}
+<body>
+    
+    <!-- Page Content -->
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <h1 class="page-header">
+                    Albums |
+                    @*<small><a href='@Url.Action("Photos", "Home")'>Albums</a></small>*@
+                    <small><a href='@Url.Action("AllPhotos", "Home")'>All Photos</a></small> |  
+                <small><a href='@Url.Action("Videos", "Home")'>Videos</a></small> |  </h1>
+                                                
+            </div>
+            <div class=" col-lg-3 col-md-6 col-xs-9 thumb">
+                <a class=" thumbnail" href='@Url.Action("Brush_Remvoal_Hogging", "Home")'> Brush Removal-Hogging
+                    <img class="img-responsive" 
+                         src="~/img/Brush Remoal-Hogging/PileofBrush.jpg"  style="height: 190px; width: 400px" alt="" >
+                </a>
+    
+            </div>
+            <div class="col-lg-3 col-md-6 col-xs-9 thumb">
+                <a class="thumbnail" href='@Url.Action("Limb_Removal", "Home")'> Limb Removal
+                    <img class="img-responsive" 
+                         src="~/img/LimbRemoval/LimbRemovalCleanUp1.jpg" 
+                         style="height: 190px; width: 400px" />
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-6 col-xs-9 thumb">
+                <a class="thumbnail" 
+                   href='@Url.Action("Mowing", "Home")'> Mowing
+                    <img class="img-responsive" 
+                         src="~/img/Mowing/Mowing.jpg"  style="height: 190px; width: 400px"/>
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-6 col-xs-9 thumb">
+                <a class="thumbnail" href='@Url.Action("Projects", "Home")'> Projects
+                    <img class="img-responsive"  
+                         src="~/img/Projects/FirePit_1of1.png"  style="height: 190px; width: 400px"/>
+                </a>
+            </div>
+            </div>
+        <br />
+            <div class="row">
+                <div class="col-lg-3 col-md-6 col-xs-9 thumb">
+                    <a class="thumbnail" 
+                       href='@Url.Action("Stump_Grinding", "Home")'>  Stump Grinding
+                        <img class="img-responsive"  
+                             src="~/img/Filler_ExtraImages/InGroundedStump.jpg" 
+                             style="height: 190px; width: 400px"/>
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-6 col-xs-9 thumb">
+                    <a class="thumbnail" 
+                       href='@Url.Action("Tree_Removal", "Home")'>  Tree Removal
+                        <img class="img-responsive" 
+                             src="~/img/TreeRemoval/TreeRemovalDuring2-4.jpg" 
+                             style="height: 190px; width: 400px"/>
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-6 col-xs-9 thumb">
+                    <a class="thumbnail" 
+                       href='@Url.Action("Trimming", "Home")'>  Trimming
+                        <img class="img-responsive" 
+                             src="~/img/Trimming/Trimming_Boom.jpg" 
+                             style="height: 190px; width: 400px"/>
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-6 col-xs-9 thumb">
+                    <a class="thumbnail"
+                       href='@Url.Action("LeafRemoval", "Home")'>
+                        Leaf Removal
+                        <img class="img-responsive"
+                        src="~/img/Leaf Removal/CoverPhoto.jpeg"
+                             style="height: 190px; width: 400px" />
+                    </a>
+                </div>
+            </div>
+        <!--Row-->
+        <div class="row">
+            <ul class="pager">
+
+                <li class="active">
+                    <a href='@Url.Action("AllPhotos","Home")'>Home</a>
+                </li>
+
+            </ul>
+            <br />
+        </div>
+        <!--/Row-->
+</div>
+</body>
+

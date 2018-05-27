@@ -1,0 +1,210 @@
+﻿@Styles.Render("~/Content/Site.css")
+@{
+    ViewBag.Title = "Limb_Removal";
+}
+<br />
+<br />
+<br />
+
+   
+<!-- Page Content -->
+    <div class="container">
+        <!-- Page Heading -->
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1 class="page-header">
+                        <a href='@Url.Action("Photos", "Home")'>Albums</a>
+                        <small>| Limb Removal |</small>
+                    </h1>
+                </div>
+            </div>
+        <!-- /Page Heading -->
+
+       
+        <!--Row -->
+            <div class="row">
+                <div class="col-sm-3 col-xs-6 portfolio-item">
+                    <!--Image-Hyper-Link-->
+                        <a href="#portfolioModal1"
+                           class="portfolio-link"
+                           data-toggle="modal">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content">
+                                        <i class="fa fa-plus fa-3x"></i>
+                                    </div>
+                                </div>
+                            <!--Image-->
+                                <img class="img-responsive"
+                                     style="height: 210px; width: 280px"
+                                     src="~/img/LimbRemoval/LimbRemoval1.jpg"/>
+                            <!--Image-->
+                        </a>
+                    <!--/Image-Hyper-Link-->
+                </div>
+                
+                <div class="col-sm-3 col-xs-6 portfolio-item">
+                    <!--Image-Hyper-Link-->
+                        <a href="#portfolioModal2"
+                           class="portfolio-link"
+                           data-toggle="modal">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content">
+                                        <i class="fa fa-plus fa-3x"></i>
+                                    </div>
+                                </div>
+                            <!--Image-->
+                                <img class="img-responsive"
+                                    style="height: 210px; width: 280px"
+                                     src="~/img/LimbRemoval/LimbRemovalCleanUp1.jpg"/>
+                            <!--Image-->
+                        </a>
+                    <!--/Image-Hyper-Link-->
+
+                </div>
+                
+                    <div class="col-sm-3 col-xs-6 portfolio-item">
+                        <!--Image-Hyper-Link-->
+                            <a href="#portfolioModal3"
+                               class="portfolio-link"
+                               data-toggle="modal">
+                                    <div class="portfolio-hover">
+                                        <div class="portfolio-hover-content">
+                                            <i class="fa fa-plus fa-3x"></i>
+                                        </div>
+                                    </div>
+                                <!--Image-->
+                                    <img class="img-responsive"
+                                         style="height: 210px; width: 280px"
+                                         src="~/img/LimbRemoval/LimbRemoval.jpg"/>
+                                <!--Image-->
+                            </a>
+                        <!--/Image-Hyper-Link-->
+                </div>                
+            </div>
+        <!--/Row -->
+
+        <hr />
+
+        <!-- Row-->
+            <div class="row text-center">
+                <div class="col-lg-12">
+                    <!--Buttons-->
+                        <ul class="pagination">
+                            <!--Back-Button-->
+                                <li>
+                                    <a href='@Url.Action("Brush_Remvoal_Hogging", "Home")'>&laquo;</a>
+                                </li>
+                            <!--/Back-Button-->
+
+                            <!--Page#Button-->
+                                <li class="active">
+                                    <a href="#">2</a>
+                                </li>
+                            <!--/Page#Button-->
+
+                            <!--NextButton-->
+                                <li>
+                                    <a href='@Url.Action("Mowing", "Home")'>&raquo;</a>
+                                </li>
+                            <!--/NextButton-->
+
+                        </ul>
+                    <!--/Buttons-->
+                </div>
+            </div>
+        <!-- /Row-->
+    </div> 
+<!-- /Page Content -->
+
+       
+
+
+
+  
+
+<!-- Portfolio Modal 1 -->
+<div class="portfolio-modal modal fade"
+     id="portfolioModal1"
+     tabindex="-1"
+     role="dialog"
+     aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="close-modal"
+                 data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <!-- Project Details Go Here -->                            
+                            <img class="img-responsive img-centered" src="~/img/LimbRemoval/LimbRemoval1.jpg" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Portfolio Modal 2 -->
+<div class="portfolio-modal modal fade"
+     id="portfolioModal2"
+     tabindex="-1"
+     role="dialog"
+     aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="close-modal"
+                 data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <!-- Project Details Go Here -->
+                            <img class="img-responsive img-centered" src="~/img/LimbRemoval/LimbRemovalCleanUp1.jpg" />
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Portfolio Modal 3 -->
+<div class="portfolio-modal modal fade"
+     id="portfolioModal3"
+     tabindex="-1"
+     role="dialog"
+     aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="close-modal"
+                 data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <!-- Project Details Go Here -->
+                            <img class="img-responsive" src="~/img/LimbRemoval/LimbRemoval.jpg"/>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
