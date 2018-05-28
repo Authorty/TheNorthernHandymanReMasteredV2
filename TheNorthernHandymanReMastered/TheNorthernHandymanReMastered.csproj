@@ -244,7 +244,6 @@
     <Content Include="css\colour-lavender.css" />
     <Content Include="css\style.css" />
     <Content Include="elements.html" />
-    <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
     <Content Include="img\backgrounds\benches.png" />
@@ -303,6 +302,7 @@
     <Content Include="img\Filler_ExtraImages\Dad.PNG" />
     <Content Include="img\Filler_ExtraImages\DadProfile.jpg" />
     <Content Include="img\Filler_ExtraImages\Equipment.jpg" />
+    <Content Include="favicon.ico" />
     <Content Include="img\Filler_ExtraImages\FullStumpRemoval.jpg" />
     <Content Include="img\Filler_ExtraImages\grass_mowing.png" />
     <Content Include="img\Filler_ExtraImages\home-bg.jpg" />
