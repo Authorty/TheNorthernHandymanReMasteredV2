@@ -298,9 +298,11 @@
     <Content Include="img\Filler_ExtraImages\aboutlogo.jpg" />
     <Content Include="img\Filler_ExtraImages\BuissnessCard.jpg" />
     <Content Include="img\Filler_ExtraImages\BuissnessCard_210x280.jpg" />
+    <Content Include="img\Filler_ExtraImages\ChainSaw Circle Image.png" />
     <Content Include="img\Filler_ExtraImages\contact-bg.jpg" />
     <Content Include="img\Filler_ExtraImages\Dad.PNG" />
     <Content Include="img\Filler_ExtraImages\DadProfile.jpg" />
+    <Content Include="img\Filler_ExtraImages\Dump truck Circle Image.png" />
     <Content Include="img\Filler_ExtraImages\Equipment.jpg" />
     <Content Include="favicon.ico" />
     <Content Include="img\Filler_ExtraImages\FullStumpRemoval.jpg" />
@@ -319,6 +321,7 @@
     <Content Include="img\Filler_ExtraImages\ReviewIcon.png" />
     <Content Include="img\Filler_ExtraImages\seasons.jpg" />
     <Content Include="img\Filler_ExtraImages\SkidSteer2.jpg" />
+    <Content Include="img\Filler_ExtraImages\Snow Flake Circle Image.png" />
     <Content Include="img\Filler_ExtraImages\snow_forest.jpg" />
     <Content Include="img\Filler_ExtraImages\stormdamage2_edited.jpg" />
     <Content Include="img\Filler_ExtraImages\stormdamage_edited.jpg" />
