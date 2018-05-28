@@ -22,3 +22,8 @@ select,
 textarea {
     max-width: 280px;
 }
+
+.skidSteer {
+    background-image: url(../img/Filler_ExtraImages/SkidSteer2.jpg);
+   
+}

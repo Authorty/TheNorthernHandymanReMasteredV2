@@ -1,6 +1,270 @@
 ﻿
-<p>Testing</p>
+@Styles.Render("~/Content/About.css")
+<title>
+    About | TheNorthernHandyman
+</title>
 
+<!--Container-->
+<div class="container">
+
+    <!--Row-->
+    <div class="row" style="text-align:center">
+
+        <!--Logo-->
+        <img src="~/img/Filler_ExtraImages/Untitled.Resized.png" />
+        <!--/Logo-->
+
+    </div>
+    <!--/Row-->
+    <!--Spacing-->
+    <br />
+    <!--/Spacing-->
+    <!--New Row-->
+    <div class="row">
+        <!--Contact Info-->
+        <div class="col-lg-12 ">
+            <h3 class="text-center" id="LowerPageLocation">
+                Location :<br />
+                <!--Location Address-->
+                <strong>
+                    N5043 Larry Rd.<br />
+                    New London, WI 54961
+                </strong>
+                <!--Location Address-->
+
+                <br />
+                <abbr title="Phone"></abbr>
+                Phone :
+
+                <!--Phone Number-->
+                <strong>
+                    920.277.5947
+                </strong>
+                <!--Phone Number-->
+
+                <br />
+                Email Me :
+
+                <!--Email Address-->
+                <strong>
+                    <a TheNorthernHandyman@gmail.com">TheNorthernHandyman@gmail.com</a>
+                </strong>
+                <!--/Email Address-->
+
+                <br />
+                <br />
+
+                <!--Filler Words-->
+                <strong>
+                    Feel free to contact us for any services listed on our Services page.<br />
+                </strong>We are Fully insured
+                <Strong>
+                    and our company strongly believes in being enviornmentally friendly.
+                </Strong>
+                <!--/Filler Words-->
+
+            </h3>
+            <br />
+        </div>
+        <!--/Contact Info-->
+    </div>
+    <!--/Row-->
+
+    <hr />
+    <br />
+
+    <!--Mobile-Phone Header-->
+    <div class="page-header-mobile visible-xs">
+
+        <!--Star Icon-->
+        <h2>
+            <span class="glyphicon glyphicon-star"></span> About Us
+        </h2>
+        <!--/Star Icon-->
+
+    </div>
+    <!--/Mobile-Phone Header-->
+    <!--- Main Area Text --->
+    <!--Container-->
+    <div class="container">
+        <!--Row-->
+        <div class="row">
+            <div class="col-xs-12 col-sm-8 ,text-center">
+
+                <!--About Header with star-->
+                <h1 class="white-border-bottom hidden-xs">
+                    <span class="glyphicon glyphicon-star"></span> About Us
+                </h1>
+                <!--/About Header with star-->
+                <!--About Paragraph 1-->
+                <p>
+                    The Northern Handyman is a home based business with over 30 years of experience.
+                    We have the capabilities to fill all your <strong> Commercial </strong> or <strong> Residential </strong>
+                    landscaping needs. This Business is centered around focusing on doing the job right the
+                    FIRST time while being safety conscious and curtious. The Northern Handyman is flexible
+                    to accommodate what works best for it's clients and with over 10 years of services provided,
+                    we always strive to make sure the customer is completely satisfied.
+                </p>
+                <!--/About Paragraph 1-->
+                <!--Discounted Advertisment-->
+                <p>
+                    <!--Highlighted-->
+                    <mark>
+                        <strong>*SPECIAL*</strong>
+                        Ask About our 10% Discount for Veterans and Senior Citizens! Or Our 20% for disabled.
+                    </mark>
+                    <!--/Highlighted-->
+
+                </p>
+                <!--/Discounted Advertisment-->
+                <!--About Paragraph 2-->
+                <p>
+                    The Northern Handyman is a business that will go
+                    beyond your summer season needs by providing you with affordable snow removal
+                    services during the cold winter seasons.  We provide affordable all-year-round services Or just one
+                    time seasonal services. If needed we can haul away debris. We do not leave it lying around.
+                    We offer topsoil and provide seeding when necessary.
+                    <!--Underlined -->
+                    <em>
+                        <u>With over 30 years of Experience</u>
+                    </em>, Our customers list consists of
+                    <em>
+                        <u>commercial and residential clients</u>
+                    </em>. Needless to say, we put
+                    <u>
+                        <em>Customer satisfaction as our primary goal</em>
+                    </u>.
+                    <!--Underlined -->
+                </p>
+                <!--/About Paragraph 2-->
+                <!--Filler Words-->
+                <p>
+                    So, if you are looking for the best quality and the best value of tree service in Your Area, look no further.<br>
+                    <!--Quote link to contact Page-->
+                    <a href='@Url.Action("Contact", "Home")' style="color:green;">
+                        Simply click here to request a FREE quote!
+                    </a>
+                    <!--/Quote Link to Contact Page-->
+
+                </p>
+                <!--/Filler Words-->
+
+            </div>
+
+            <!--- /Main Area Text --->
+            <!--- Service Coulum--->
+            <div class="col-xs-12 col-sm-4">
+                <br />
+                <br />
+
+                <!--Tree Icon-->
+                <h2 class="white-border-bottom ">
+                    <span class="glyphicon glyphicon-tree-deciduous"></span>Our Services
+                </h2>
+                <!--/Tree Icon-->
+                <!--The List Of Services -->
+                <ul>
+
+                    <li>
+                        <a href='@Url.Action("Tree_Stump_Removal_Index", "Home")'
+                           style="color:green;">
+                            Tree &amp; Stump Removal
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href='@Url.Action("Landscape_Lawncare_Index", "Home")'
+                           style="color:green;">
+                            Mowing
+                        </a>
+                    </li>
+                    <li>
+                        <a href='@Url.Action("Services", "Home")'
+                           style="color:green;">
+                            Storm Damage Clean Up
+                        </a>
+                    </li>
+                    <li>
+                        <a href='@Url.Action("Landscape_Lawncare_Index", "Home")'
+                           style="color:green;">
+                            Shrub &amp; Bush Care
+                        </a>
+                    </li>
+                    <li>
+                        <a href='@Url.Action("Winter_Services_Index", "Home")'
+                           style="color:green;">
+                            Snow Removal
+                        </a>
+                    </li>
+                    <li>
+                        <a href='@Url.Action("Services", "Home")'
+                           style="color:green;">
+                            Skid Steer Work
+                        </a>
+                    </li>
+                    <li>
+                        <a href='@Url.Action("Tree_Stump_Removal_Index", "Home")'
+                           style="color:green;">
+                            Limb Removal
+                        </a>
+                    </li>
+                    <li>
+                        <a href='@Url.Action("Services", "Home")'
+                           style="color:green;">
+                            Driveway Structure Repair
+                        </a>
+                    </li>
+                    <li>
+                        <a href='@Url.Action("Services", "Home")'
+                           style="color:green;">
+                            Lot Clearing
+                        </a>
+                    </li>
+                </ul>
+                <!--- /The List Of Services --->
+
+            </div>
+            <!--- Service Coulum--->
+
+        </div>
+        <!--/Row-->
+        <!-- /About Section -->
+        <!--New Row-->
+        <div class="row">
+
+            <!--Buttons-->
+            <ul class="pager">
+
+                <!--Back Button-->
+                <li>
+                    <a id="AboutPager" href='@Url.Action("Index", "Home")'>Home</a>
+                </li>
+                <!--/Back Button-->
+                <!--Next Button-->
+                <li>
+                    <a id="AboutPager" href='@Url.Action("Services", "Home")'>Next &rarr;</a>
+                </li>
+                <!--/Next Button-->
+
+            </ul>
+            <!--/Buttons-->
+            <!--/Row-->
+        </div>
+        <!--/New Row-->
+        <hr />
+
+    </div>
+    <!--/Container-->
+    <!---/ Main Area Text --->
+
+
+</div>
+<!--/Container-->
+<!--FooterImage-->
+<footer>
+    <img id="AboutFooterImage" src="~/img/Filler_ExtraImages/Equipment.jpg" />
+</footer>
+<!--/FooterImage-->
 
 <script>
   window.fbAsyncInit = function() {
