@@ -11,16 +11,16 @@
     <!--Container-->
     <div class="container">
         <div class="row">
-            <h3> <strong>Don't See Your City Listed?</strong> </h3>
+            <h3 class="text-muted"> <strong>Don't See Your City Listed?</strong> </h3>
             <!--Primary Location-->
-            <div class="col-lg-6">
+            <div class="col-lg-5 text-muted">
                 <strong>Primary Location: <br /></strong>
                 <small>
                     <a href="#"> - New London, WI </a><br />
                     <a href="#"> - Three Lakes, WI</a><br />
                 </small>
                 <br />
-                <div class="col-lg-6">
+                <div class="col-lg-5 text-muted">
                     <strong> We Also Serve The Fox Cities:<br /></strong>
                     <small>
                         <a href="#">- Appleton, WI</a><br />
@@ -36,12 +36,14 @@
             </div>
 
             <!--/Primary Location-->
-            <div class="col-lg-offset-6">
-                <h1>Contact Us For Details.</h1>
+            <div class="col-lg-6" style="margin-top:-40px;">
+                <h1 class="text-primary">Contact Us For Details.</h1>
 
-                <p class="col-lg-offset-1 ">
-                    We are more than happy to travel to the outlying areas
-                    <br />for an additional fee to cover our travel costs.
+                <p class="col-lg-offset-1 text-muted">
+                    <strong>
+                        We* are more than happy to travel to the outlying areas
+                        <br />for an additional fee to cover our travel costs.
+                    </strong>
                 </p><br />
             </div>
             <div class="separator-2"></div>
@@ -50,30 +52,31 @@
             <div class="row">
 
 
-                <div class="col-md-6 col-md-4">
-
-                    <div class="form">
-                        <div id="sendmessage">Your message has been sent. Thank you!</div>
-                        <div id="errormessage"></div>
-                        <form action="" method="post" role="form" class="contactForm">
-                            <div class="form-group">
-                                <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
-                                <div class="validation"></div>
-                            </div>
-                            <div class="form-group">
-                                <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
-                                <div class="validation"></div>
-                            </div>
-                            <div class="form-group">
-                                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
-                                <div class="validation"></div>
-                            </div>
-                            <div class="form-group">
-                                <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
-                                <div class="validation"></div>
-                            </div>
-                            <div class="text-center"><button type="submit">Send Message</button></div>
-                        </form>
+                <div class="col-md-6">
+                    <div class="col-lg-offset-1">
+                        <div class="form">
+                            <div id="sendmessage">Your message has been sent. Thank you!</div>
+                            <div id="errormessage"></div>
+                            <form action="" method="post" role="form" class="contactForm">
+                                <div class="form-group">
+                                    <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                                    <div class="validation"></div>
+                                </div>
+                                <div class="form-group">
+                                    <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
+                                    <div class="validation"></div>
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+                                    <div class="validation"></div>
+                                </div>
+                                <div class="form-group">
+                                    <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
+                                    <div class="validation"></div>
+                                </div>
+                                <div class="text-center"><button type="submit">Send Message</button></div>
+                            </form>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -81,97 +84,9 @@
         <!--Row-->
         <div class="row">
 
-            <!--/Row-->
-            <!--New Row / Contact Form-->
-            @*<div class="row ">
-                <div class="col-lg-4 col-md-4 col-sm-6">
-                    @using (Html.BeginForm("Contact", "Home",
-                new { ReturnUrl = ViewBag.ReturnUrl }, FormMethod.Post,
-                new { @id = "contact-form", role = "form" }))
-                    {
-                        //@Html.ValidationSummary()
-                        <field+set>
-                            <div class="form-div-1">
-                                <label class="name">
-                                    @Html.TextBoxFor(m => m.Name,
-                           new { @class = "form-control", placeholder = "Name *", required = "required" })
-                                </label>
-                            </div>
-                            <div class="form-div-2">
-                                <label class="email">
-                                    @Html.TextBoxFor(m => m.Email,
-                           new { @class = "form-control", placeholder = "Email *", required = "required" })
-                                </label>
-                            </div>
-                            <div class="form-div-3">
-                                <label class="phone">
-                                    @Html.TextBoxFor(m => m.Phone,
-                           new { @class = "form-control", placeholder = "Phone *", required = "required" })
-                                </label>
-                            </div>
-                            <div>
-                                <label class="message">
-                                    @Html.TextAreaFor(m => m.Message,
-                           new
-                           {
-                               @class = "form-control job-description",
-                               placeholder = "Job Description",
-                               required = "required"
-                           })
-                                </label>
-                            </div>
-                            <div class="button-wrapper">
-                                <input type="submit" value="Send Email" name="submit" class="btn-success">
-                                <span class="btn-xs">* Required Fields</span>
-                            </div>
-                        </field+set>
-
-                    }
-                </div>*@
-
-            @*<div class="col-lg-5 col-md-4 col-sm-6">
-                    <h3 class="section-subheading text-muted" style="text-align:center">
-                        <span id="ContactIcons"
-                              class="glyphicon glyphicon-map-marker">
-                        </span>
-
-                        <strong> Location :</strong>
-                        <br />
-                        N5043 Larry Rd.<br />
-                        New London, WI 54961<br />
-                        <span id="ContactIcons"
-                              class="glyphicon glyphicon-earphone">
-                        </span>
-                        <strong> Phone :</strong>
-                        920.277.5947
-                        <br />
-                        <span id="ContactIcons"
-                              class="glyphicon glyphicon-envelope">
-                        </span>
-                        <strong> Email Me :</strong>
-                        <br />
-                        <a href="mailto:TheNorthernHandyman@gmail.com">TheNorthernHandyman@gmail.com</a>
-                        <br />
-                        <br />
-
-                    </h3>
-                </div>*@
+         
 
         </div>
-
-        <!--/New Row / Contact Form-->
-        <!--Row-->
-        @*<div class="row">
-            <div class="col-lg-12">
-                <form name="sentMessage" id="contactForm" novalidate></form>
-            </div>*@
-        <!--Buttons-->
-        <ul class="pager">
-            <li class="previous"><a id="ContactPager" href='@Url.Action("Services", "Home")'>&larr; Previous</a></li>
-            <li class="next"><a id="ContactPager" href='@Url.Action("Index", "Home")'>Home</a></li>
-        </ul>
-        <!--/Buttons-->
-        <!--/Row-->
 
         <br />
         <br />
@@ -181,7 +96,7 @@
             <div class="row ">
                 
                 <!--Local Towns-->
-                <div class="col-lg-4 col-md-4 col-sm-6">
+                <div class="col-lg-3 text-muted">
                     <strong class="Location"> Local Towns Near New London, WI.:<br /></strong>
                     <small class="Location">
                         <a href="#">- Northport, WI</a><br />
@@ -201,7 +116,7 @@
                 </div>
                 <!--/Local Towns-->
                 <!--Local Towns Three Lakes-->
-                <div class="col-lg-4 col-md-4 col-sm-6">
+                <div class="col-lg-3 text-muted">
                     <strong class="Location"> Local Towns Near Three Lakes, WI.:<br /></strong>
                     <small class="Location">
                         <a href="#">-  Sugar Camp, WI</a><br />
@@ -216,12 +131,8 @@
                 </div>
                 <!--/Local Towns Three Lakes-->
 
-            </div>
-            <!--/Row-->
-            <!--Row-->
-            <div class="row">
                 <!--Within 25miles New London-->
-                <div class="col-lg-4 col-md-4 col-sm-6">
+                <div class="col-lg-3 text-muted">
                     <strong class="Location">Within 25 miles of New London:</strong><br />
                     <small class="Location">
                         <a href="#"> - Black Creek, WI</a><br />
@@ -243,7 +154,7 @@
                 </div>
                 <!--Within 25miles Three Lakes-->
                 <!--Within 25 Miles of Three Lakes-->
-                <div class="col-lg-4 col-md-4 col-sm-6">
+                <div class="col-lg-3 text-muted">
                     
                         <strong >
                             Within 25 Miles of Three Lakes:
@@ -287,19 +198,7 @@
 
         </div>
         <!---/Availible Locations--->
-        <!--Buttons-->
-        <ul class="pager">
-            <!--Back Button-->
-            <li id="ContactPager">
-                <a id="ContactPager" href='@Url.Action("Services", "Home")'>&larr; Previous</a>
-            </li>
-            <!--/Back Button-->
-            <!--Home Button-->
-            <li>
-                <a id="ContactPager" href='@Url.Action("Index", "Home")'>Home</a>
-            </li>
-            <!--/Home Button-->
-        </ul>
+
         <!--/Buttons-->
         <!--/Container-->
 
