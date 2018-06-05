@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net;
+using System.Net.Mail;
 using System.Web;
 using System.Web.Mail;
 using System.Web.Mvc;
@@ -22,6 +24,41 @@ namespace TheNorthernHandymanReMastered.Controllers
 
             return View();
         }
+        public ActionResult SendEmail(string Name, string Phone, string Message, string Email, string Subject)
+        {
+
+            var passWord = "northernhandyman";
+            var email = new MailAddress("thenorthernhandyman@gmail.com", "Jeff");
+
+            var smtp = new SmtpClient
+            {
+                Host = "smtp.gmail.com",
+                Port = 587,
+                EnableSsl = true,
+                DeliveryMethod = SmtpDeliveryMethod.Network,
+                UseDefaultCredentials = false,
+                Credentials = new NetworkCredential(email.Address, passWord)
+            };
+
+            using (var mess = new System.Net.Mail.MailMessage(email, email)
+            {
+                Subject = Subject,
+                Body = "From: " + Name + "\n Phone Number: " + Phone + "\n Job Description: " + Message + "\n Email: " + Email
+            })
+            {
+                smtp.Send(mess);
+            }
+
+
+
+
+            //System.Web.Mail.SmtpMail.SmtpServer = "relay-hosting.secureserver.net";
+            //SmtpMail.Send(emailmessage);
+            MessageBox("Email sent successfully!");
+
+
+            return new EmptyResult();
+        }
 
         public ActionResult Contact(ContactEmailModels e)
         {
@@ -37,16 +74,39 @@ namespace TheNorthernHandymanReMastered.Controllers
             {
                 var emailmessage = new System.Web.Mail.MailMessage()
                 {
-                    Subject = e.Name,
+                    Subject = e.Name,                   
                     Body = "From: " + e.Name + "\n Phone Number: " + e.Phone + "\n Job Description: " + e.Message + "\n Email: " + e.Email,
                     From = "thenorthernhandyman@thenorthernhandyman.org",
-                    To = "itismejody@gmail.com",
+                    To = "thenorthernhandyman@gmail.org",
                     BodyFormat = MailFormat.Text,
                     Priority = System.Web.Mail.MailPriority.High
                 };
+                var passWord = "northernhandyman";
+                var email = new MailAddress("thenorthernhandyman@gmail.com", "Jeff");
+            
+                var smtp = new SmtpClient {
+                Host = "smtp.gmail.com",
+                Port = 587,
+                EnableSsl = true,
+                DeliveryMethod = SmtpDeliveryMethod.Network,
+                UseDefaultCredentials = false,
+                Credentials = new NetworkCredential(email.Address, passWord)
+                };
 
-                System.Web.Mail.SmtpMail.SmtpServer = "relay-hosting.secureserver.net";
-                SmtpMail.Send(emailmessage);
+                using (var mess = new System.Net.Mail.MailMessage(email, email)
+                {
+                    Subject = e.Name,
+                    Body = "From: " + e.Name + "\n Phone Number: " + e.Phone + "\n Job Description: " + e.Message + "\n Email: " + e.Email
+                })
+                {
+                    smtp.Send(mess);
+                }
+
+                
+
+
+                //System.Web.Mail.SmtpMail.SmtpServer = "relay-hosting.secureserver.net";
+                //SmtpMail.Send(emailmessage);
                 MessageBox("Email sent successfully!");
                 //return RedirectToAction("Index", "Home", null);
 

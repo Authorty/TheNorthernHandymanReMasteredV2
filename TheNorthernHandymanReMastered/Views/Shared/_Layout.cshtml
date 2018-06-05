@@ -463,11 +463,17 @@
                                     <div class="validation"></div>
                                 </div>
                                 <div class="form-group">
-                                    <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
+                                    <input type="text" class="form-control" name="phone" id="phone" placeholder="Phone" data-rule="minlen:4" data-msg="Please enter at least 7 chars for phone" />
                                     <div class="validation"></div>
                                 </div>
-                                <div class="text-center"><button type="submit">Send Message</button></div>
-                            </form>
+                                <div class="form-group">
+                                    <textarea class="form-control" id ="message" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
+                                    <div class="validation"></div>
+                                </div>
+                                <div class="text-center"><input  id="testButton" value="Send Email" type="button" /></div>
+   
+
+</form>
                         </div>
                     </div>
 
@@ -517,8 +523,9 @@
 
     @RenderSection("Scripts", false)
     {    <!-- Required JavaScript Libraries -->
-
+    
     }
+
     <!-- Required JavaScript Libraries -->
     <script src="~/lib/jquery/jquery.min.js"></script>
     <script src="~/lib/bootstrap/js/bootstrap.min.js"></script>
@@ -536,6 +543,36 @@
 
     <!--Contactform script -->
     <script src="~/contactform/contactform.js"></script>
+
+
+    <script type="text/javascript">
+
+        function sendEmail() {
+
+            var url = '/Home/SendEmail?Name=__NAME__&amp;Phone=__PHONE__&amp;Message=__MESSAGE__&amp;Email=__EMAIL__';
+            var newUrl = url.replace('__NAME__', $("#name").val());
+            newUrl = newUrl.replace('__PHONE__', $("#phone").val());
+            newUrl = newUrl.replace("__MESSAGE__", $("#message").val());
+            newUrl = newUrl.replace("__EMAIL__", $("#email").val());
+            $.ajax({
+                type: "POST",
+                url: newUrl,
+
+                success: function () {
+                    alert('Success');
+                    $("#email").val("");
+                    $("#message").val("");
+                    $("#phone").val("");
+                    $("#name").val("");
+                    $("#subject").val("");
+                }
+            });
+        }
+        $("#testButton").click(sendEmail);
+        $(document).ready(function () {
+
+        });
+    </script>
 
 </body>
 
