@@ -592,7 +592,7 @@
     <Content Include="Views\Home\LeafRemoval.cshtml" />
     <Content Include="Views\Home\Limb_Removal.cshtml" />
     <Content Include="Views\Home\Mowing.cshtml" />
-    <Content Include="Views\Home\Photos.cshtml" />
+    <Content Include="Views\Home\Skid Steer Work.cshtml" />
     <Content Include="Views\Home\Projects.cshtml" />
     <Content Include="Views\Home\Services.cshtml" />
     <Content Include="Views\Home\Stump_Grinding.cshtml" />
