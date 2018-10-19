@@ -603,6 +603,7 @@
     <Content Include="Views\Home\Videos.cshtml" />
     <Content Include="Views\Home\View.cshtml" />
     <Content Include="Views\Home\Winter_Services_Index.cshtml" />
+    <Content Include="Views\Home\SkidSteerWork.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

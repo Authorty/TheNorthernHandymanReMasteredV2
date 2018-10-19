@@ -124,6 +124,10 @@ namespace TheNorthernHandymanReMastered.Controllers
         {
             return View();
         }
+        public ActionResult SkidSteerWork()
+        {
+            return View();
+        }
         public ActionResult Photos()
         {
             return View();
