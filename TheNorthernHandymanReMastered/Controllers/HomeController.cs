@@ -172,8 +172,15 @@ namespace TheNorthernHandymanReMastered.Controllers
         {
             return View();
         }
-        public ActionResult Landscape_Lawncare_Index()
+        public ActionResult Landscape_Lawncare_Index(int? carouselId)
         {
+            if (carouselId == null)
+            {
+                carouselId = 1;
+            }
+
+            ViewBag.CarouselId = carouselId;
+
             return View();
         }
         public ActionResult Winter_Services_Index()
