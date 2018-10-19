@@ -403,6 +403,7 @@
     <Content Include="img\slides\slide2.png" />
     <Content Include="img\SnowServices\Parkinglot_edited.jpg" />
     <Content Include="img\SnowServices\Plowed_Driveway_edited.jpg" />
+    <Content Include="img\SnowServices\SaltRoad.jpg" />
     <Content Include="img\SnowServices\Snow.PNG" />
     <Content Include="img\SnowServices\SnowPlowing_edited.jpg" />
     <Content Include="img\SnowServices\Snowy_Parkinglot_edited.jpg" />
