@@ -5,13 +5,13 @@
 <div class="hero" id="highlighted">
     <div class="inner">
         <!--Slideshow-->
-        <div id="highlighted-slider" class="container">
-            <div class="item-slider" data-toggle="owlcarousel" data-owlcarousel-settings='{"singleItem":true, "navigation":true, "transitionStyle":"fadeUp"}'>
+        <div id="slider" class="container ">
+            <div class="item-slider" id="owl-demo" data-toggle="owlcarousel" @*data-owlcarousel-settings='{"singleItem":true, "navigation":true, "transitionStyle":"fadeUp"}'*@>
                 <!--Slideshow content-->
                
                 
                 <!--Slide 1  -->
-                <div class="item">
+                <div class="item" >
                     <div class="row">
                         <div class="col-md-6 text-right-md item-caption">
                             <h2 class="h1 text-weight-light">
@@ -34,7 +34,7 @@
                     </div>
                 </div>
                 <!--Slide 2  -->
-                <div class="item">
+                <div class="item active" >
                     <div class="row">
                         <div class="col-md-6 text-right-md item-caption">
                             <h2 class="h1 text-weight-light">LANDSCAPE MAINTANCE
@@ -111,4 +111,48 @@
     <!--/Next Button-->
 
 </ul>
-<!--/Buttons-->
+@section Scripts
+{
+    
+    
+
+
+<script type="text/javascript">
+
+    $(document).ready(function () {
+
+        //var oc = $('#owl-demo');
+
+        //oc.each(function () {
+        //    var el = $(this);
+
+        //    el.owlCarousel($.extend({
+        //        autoplay: 2000,
+        //        loop: true,
+        //        items: 4,
+        //        autowidth: true,
+        //        nav: false,
+        //        dots: false,
+        //        margin: 30,
+        //        startPosition:3
+        //    }, el.data('carousel-options')));
+        //});
+
+        $('#owl-demo').owlCarousel({
+            nav : true,
+            slideSpeed : 1500,
+            paginationSpeed: 150,
+            items:4,
+            singleItem: true,
+            startPosition: 3,
+          
+            addClassActive: true
+
+        });
+    });
+
+    
+
+</script>
+
+    }
